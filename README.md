@@ -69,6 +69,8 @@ yarn start
 
 Generates migration based on changes in entities at provided path
 
+### Don't forget to run migrations after generation a new one as to keep database structure up to date
+
 ```bash
 yarn migration:generate ./src/shared/database/migrations/<name of migration file>
 ```

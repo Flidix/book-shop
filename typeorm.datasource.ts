@@ -1,9 +1,13 @@
-import { join } from 'path';
+import { basename, join } from 'path';
 import { DataSource } from 'typeorm';
 
 import { Environment } from '@shared/variables/environment';
 
+<<<<<<< HEAD
 const isDist = __dirname.endsWith('dist');
+=======
+const isDist = basename(__dirname) === 'dist';
+>>>>>>> db12171834fe2a43b22d6ddd8da51f758606ce5a
 
 const filesExtension = isDist ? '.js' : '.ts';
 
